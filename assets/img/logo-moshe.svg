@@ -1,34 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <defs>
-    <clipPath id="outerC"><circle cx="100" cy="100" r="96"/></clipPath>
-    <clipPath id="rightH"><rect x="100" y="0" width="100" height="200"/></clipPath>
-    <path id="bandArc" d="M 60 102 A 42 42 0 0 1 140 102"/>
+    <!-- Left semicircle: arcs counterclockwise (left side) -->
+    <clipPath id="L"><path d="M100,4 A96,96 0 0,0 100,196 Z"/></clipPath>
+    <!-- Right semicircle: arcs clockwise (right side) -->
+    <clipPath id="R"><path d="M100,4 A96,96 0 0,1 100,196 Z"/></clipPath>
   </defs>
+
+  <!-- White border ring -->
   <circle cx="100" cy="100" r="99" fill="white"/>
-  <g clip-path="url(#outerC)">
+
+  <!-- ===== LEFT HALF: BRAZIL ===== -->
+  <g clip-path="url(#L)">
+    <!-- Green background -->
     <circle cx="100" cy="100" r="96" fill="#009C3B"/>
-    <polygon points="100,21 179,100 100,179 21,100" fill="#FFDF00"/>
-    <circle cx="100" cy="100" r="49" fill="#003087"/>
-    <path d="M 59 101 A 41 41 0 0 1 141 101" stroke="white" stroke-width="5.5" fill="none"/>
-    <circle cx="79" cy="89" r="2.5" fill="white"/>
-    <circle cx="92" cy="81" r="2.5" fill="white"/>
-    <circle cx="106" cy="80" r="2.5" fill="white"/>
-    <circle cx="119" cy="87" r="2.8" fill="white"/>
-    <circle cx="72" cy="101" r="2" fill="white"/>
-    <circle cx="77" cy="113" r="2" fill="white"/>
-    <circle cx="89" cy="120" r="2" fill="white"/>
-    <text font-family="Arial,Helvetica,sans-serif" font-size="7.2" fill="white" font-weight="700">
-      <textPath href="#bandArc" startOffset="2%">ORDEM E PROGRESSO</textPath>
-    </text>
-    <g clip-path="url(#rightH)">
-      <rect x="100" y="4" width="92" height="64" fill="#D52B1E"/>
-      <rect x="100" y="68" width="92" height="64" fill="#ffffff"/>
-      <rect x="100" y="132" width="92" height="60" fill="#0038A8"/>
-      <circle cx="148" cy="100" r="22" fill="#3D9142"/>
-      <circle cx="148" cy="100" r="22" fill="none" stroke="#c00020" stroke-width="1.5"/>
-      <polygon points="148,82 152.1,94.3 165.1,105.6 154.7,102.2 158.6,114.6 148,107 137.4,114.6 141.3,102.2 130.9,105.6 143.9,94.3" fill="#FFDF00"/>
-    </g>
-    <line x1="100" y1="4" x2="100" y2="196" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <!-- Yellow diamond -->
+    <polygon points="100,10 190,100 100,190 10,100" fill="#FFDF00"/>
+    <!-- Blue globe -->
+    <circle cx="100" cy="100" r="50" fill="#003087"/>
+    <!-- White diagonal band -->
+    <line x1="52" y1="118" x2="100" y2="56" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <!-- ORDEM E PROGRESSO text on band -->
+    <text font-family="Arial,Helvetica,sans-serif" font-size="5.6" fill="#009C3B" font-weight="bold"
+          transform="translate(55,113) rotate(-50)">ORDEM E PROGRESSO</text>
+    <!-- Stars above the band -->
+    <circle cx="73" cy="89"  r="2.6" fill="white"/>
+    <circle cx="85" cy="80"  r="2.6" fill="white"/>
+    <circle cx="97" cy="76"  r="2.6" fill="white"/>
+    <!-- Stars below the band -->
+    <circle cx="66" cy="107" r="2.1" fill="white"/>
+    <circle cx="71" cy="119" r="2.1" fill="white"/>
+    <circle cx="83" cy="126" r="2.1" fill="white"/>
   </g>
-  <circle cx="100" cy="100" r="96" fill="none" stroke="#222" stroke-width="2.5"/>
+
+  <!-- ===== RIGHT HALF: PARAGUAY ===== -->
+  <g clip-path="url(#R)">
+    <!-- Red stripe (top) -->
+    <rect x="100" y="4"   width="96" height="64" fill="#D52B1E"/>
+    <!-- White stripe (middle) -->
+    <rect x="100" y="68"  width="96" height="64" fill="#FFFFFF"/>
+    <!-- Blue stripe (bottom) -->
+    <rect x="100" y="132" width="96" height="64" fill="#0038A8"/>
+    <!-- Green coat-of-arms circle -->
+    <circle cx="148" cy="100" r="24" fill="#3D9142"/>
+    <!-- 5-pointed yellow star (correct geometry, r_outer=15, r_inner=6.5) -->
+    <polygon points="
+      148,85
+      151.4,95.4  162.3,95.4
+      154.0,102.0  157.4,112.4
+      148,106.2
+      138.6,112.4  142.0,102.0
+      133.7,95.4  144.6,95.4"
+      fill="#FFDF00"/>
+  </g>
+
+  <!-- Center dividing line -->
+  <line x1="100" y1="4" x2="100" y2="196" stroke="white" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Outer border -->
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#1a1a1a" stroke-width="3"/>
 </svg>
