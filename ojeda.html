@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quem Somos | Moshe Internacionalização</title>
+  <meta name="description" content="Conheça o Dr. Felipe Ojeda, advogado especialista em internacionalização patrimonial, planejamento tributário, holding, offshore e visto para o Paraguai.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.mosheinternacional.com/ojeda.html">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .hero-quem {
+      background: var(--ink-950);
+      padding: 100px 0 72px;
+      text-align: center;
+    }
+    .hero-quem .eyebrow { color: var(--gold-400); }
+    .hero-quem h1 {
+      margin: 0 0 20px;
+      color: #fff;
+      font-family: Montserrat, sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.08;
+      letter-spacing: -.03em;
+    }
+    .hero-quem p {
+      margin: 0 auto;
+      max-width: 640px;
+      color: var(--slate-400);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .photos-section { padding: 80px 0 60px; background: var(--surface); }
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .photo-card {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      aspect-ratio: 3/4;
+      background: var(--ink-800);
+    }
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .photos-grid { grid-template-columns: 1fr; max-width: 360px; margin-inline: auto; }
+    }
+
+    .bio-section { padding: 80px 0; background: var(--surface-alt); }
+    .bio-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .bio-text h2 {
+      margin: 0 0 6px;
+      color: var(--ink-950);
+      font-family: Montserrat, sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.1;
+      letter-spacing: -.03em;
+    }
+    .bio-text .oab {
+      display: inline-block;
+      margin-bottom: 24px;
+      color: var(--gold-600);
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .bio-text p {
+      margin: 0 0 18px;
+      color: var(--slate-600);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+    .bio-highlights {
+      background: var(--surface);
+      border-radius: var(--radius-md);
+      padding: 36px 40px;
+      box-shadow: var(--shadow-sm);
+    }
+    .bio-highlights h3 {
+      margin: 0 0 24px;
+      color: var(--ink-950);
+      font-family: Montserrat, sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: -.02em;
+    }
+    .highlight-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .highlight-list li {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .highlight-list .icon {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--gold-500);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    .highlight-list .text strong {
+      display: block;
+      color: var(--ink-950);
+      font-size: .95rem;
+      margin-bottom: 2px;
+    }
+    .highlight-list .text span {
+      color: var(--slate-600);
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 820px) {
+      .bio-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+
+    .credentials { padding: 56px 0; background: var(--ink-950); }
+    .creds-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      text-align: center;
+    }
+    .cred-item .num {
+      display: block;
+      color: var(--gold-400);
+      font-family: Montserrat, sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -.03em;
+    }
+    .cred-item .label {
+      color: var(--slate-400);
+      font-size: .9rem;
+      line-height: 1.4;
+    }
+
+    .cta-section { padding: 88px 0; text-align: center; }
+    .cta-section h2 {
+      margin: 0 0 18px;
+      color: var(--ink-950);
+      font-family: Montserrat, sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      letter-spacing: -.03em;
+    }
+    .cta-section p { margin: 0 0 36px; color: var(--slate-600); font-size: 1.05rem; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <div class="topbar">
+    <div class="container">
+      <span>Assessoria em internacionalização · Brasil e Paraguai</span>
+      <span><a href="https://t.me/ojedabot" target="_blank" rel="noopener">Falar no Telegram</a></span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Moshe Internacionalização · Página inicial">
+        <img class="brand-mark" src="assets/img/logo-moshe.svg" alt="" width="44" height="44">
+        <span class="brand-copy"><strong>Moshe</strong><span>Internacionalização</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#diferenciais">Diferenciais</a>
+        <a href="index.html#como-funciona">Como funciona</a>
+        <a href="ojeda.html" aria-current="page">Quem Somos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="index.html#contato">Avaliação gratuita</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="hero-quem">
+      <div class="container">
+        <span class="eyebrow">Quem Somos</span>
+        <h1>Dr. Felipe Ojeda</h1>
+        <p>Advogado especialista em internacionalização patrimonial, planejamento tributário e estruturação de empresas no Brasil e no Paraguai.</p>
+      </div>
+    </section>
+
+    <section class="photos-section">
+      <div class="container">
+        <div class="photos-grid">
+          <div class="photo-card">
+            <img src="assets/img/ojeda-1.jpg" alt="Dr. Felipe Ojeda">
+          </div>
+          <div class="photo-card">
+            <img src="assets/img/ojeda-2.jpg" alt="Dr. Felipe Ojeda">
+          </div>
+          <div class="photo-card">
+            <img src="assets/img/ojeda-3.jpg" alt="Dr. Felipe Ojeda">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bio-section">
+      <div class="container">
+        <div class="bio-inner">
+          <div class="bio-text">
+            <h2>Felipe Cavalhero Ojeda</h2>
+            <span class="oab">OAB/SP 357.192</span>
+            <p>Advogado graduado pela Faculdade de Direito de São Bernardo do Campo, com especialização em Direito Empresarial e atuação focada em estruturação patrimonial internacional. Fundador da <strong>Advocacia Ojeda</strong> e idealizador da <strong>MOSHE Internacional</strong>, assessoria de referência para brasileiros que desejam internacionalizar seus patrimônios e negócios com segurança jurídica.</p>
+            <p>Com mais de uma década de experiência em direito tributário e societário, o Dr. Ojeda construiu sólida expertise no corredor Brasil–Paraguai — uma das fronteiras mais estratégicas da América do Sul para planejamento patrimonial. Acompanha pessoalmente cada cliente, do diagnóstico inicial à conclusão dos processos, garantindo agilidade, transparência e resultado.</p>
+            <p>Além da advocacia, é divulgador do movimento por liberdade financeira e soberania individual, com presença ativa no YouTube (<a href="https://www.youtube.com/@BitcoineLiberdade" target="_blank" rel="noopener" style="color:var(--gold-600);font-weight:700">@BitcoineLiberdade</a>) e no Twitter (<a href="https://twitter.com/ojedabtc" target="_blank" rel="noopener" style="color:var(--gold-600);font-weight:700">@ojedabtc</a>), onde compartilha conhecimento sobre Bitcoin, liberdade econômica e internacionalização.</p>
+          </div>
+          <div class="bio-highlights">
+            <h3>Áreas de atuação</h3>
+            <ul class="highlight-list">
+              <li>
+                <div class="icon">🏢</div>
+                <div class="text">
+                  <strong>Abertura de empresa no Paraguai</strong>
+                  <span>SA, SRL e sucursais — registro, FEPYME, conta bancária e CÉDULA</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon">🗺️</div>
+                <div class="text">
+                  <strong>Visto e residência permanente</strong>
+                  <span>Regularização migratória completa para você e sua família</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon">🏦</div>
+                <div class="text">
+                  <strong>Holding e offshore</strong>
+                  <span>Estruturação de grupos empresariais para proteção e eficiência fiscal</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon">📊</div>
+                <div class="text">
+                  <strong>Planejamento tributário</strong>
+                  <span>Redução legal da carga fiscal no Brasil e no Paraguai</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon">💼</div>
+                <div class="text">
+                  <strong>Direito empresarial</strong>
+                  <span>Contratos, M&amp;A, proteção de ativos e sucessão empresarial</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="credentials">
+      <div class="container">
+        <div class="creds-grid">
+          <div class="cred-item">
+            <span class="num">+10</span>
+            <span class="label">anos de experiência<br>em direito empresarial</span>
+          </div>
+          <div class="cred-item">
+            <span class="num">+500</span>
+            <span class="label">clientes atendidos<br>no Brasil e Paraguai</span>
+          </div>
+          <div class="cred-item">
+            <span class="num">100%</span>
+            <span class="label">acompanhamento<br>do início ao fim</span>
+          </div>
+          <div class="cred-item">
+            <span class="num">2</span>
+            <span class="label">países com<br>atuação direta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section">
+      <div class="container">
+        <h2>Pronto para internacionalizar?</h2>
+        <p>Agende uma avaliação gratuita e descubra o melhor caminho para o seu patrimônio.</p>
+        <a class="btn btn-primary" href="index.html#contato">Falar com o Dr. Ojeda</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="assets/img/logo-moshe.svg" alt="" width="44" height="44">
+          <span class="brand-copy"><strong>Moshe</strong><span>Internacionalização</span></span>
+        </a>
+        <p>Assessoria em internacionalização, planejamento tributário, holding, offshore e visto para o Paraguai. Uma parceria da Advocacia Ojeda.</p>
+        <div class="footer-social">
+          <a href="https://t.me/ojedabot" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none"><path d="M21 4 3 11.2l6 2.2M21 4l-3 16-6.4-4.6M21 4 8.6 13.4m0 0L9 19l2.6-3.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://twitter.com/ojedabtc" target="_blank" rel="noopener" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.15 12.15 0 0 1 3.15 4.9a4.27 4.27 0 0 0 1.32 5.71 4.25 4.25 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.97A8.6 8.6 0 0 1 2 18.58 12.13 12.13 0 0 0 8.56 20.5c7.87 0 12.18-6.52 12.18-12.18 0-.19 0-.37-.01-.55A8.7 8.7 0 0 0 22.46 6Z"/></svg></a>
+          <a href="https://www.youtube.com/@BitcoineLiberdade" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 7s-.3-2-1.2-2.8c-1.1-1.2-2.4-1.2-3-1.3C16 2.8 12 2.8 12 2.8s-4 0-6.3.1c-.6.1-1.9.1-3 1.3C1.8 5 1.5 7 1.5 7S1.2 9.3 1.2 11.6v2.1c0 2.3.3 4.6.3 4.6s.3 2 1.2 2.8c1.1 1.2 2.6 1.1 3.3 1.2C8 22.4 12 22.4 12 22.4s4 0 6.3-.2c.6-.1 1.9-.1 3-1.2.9-.8 1.2-2.8 1.2-2.8s.3-2.3.3-4.6v-2.1C22.8 9.3 22.5 7 22.5 7ZM9.7 15.5V8.4l8.1 3.6-8.1 3.5Z"/></svg></a>
+          <a href="https://www.linkedin.com/company/102428652/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 2H3.6A1.6 1.6 0 0 0 2 3.6v16.8A1.6 1.6 0 0 0 3.6 22h16.8a1.6 1.6 0 0 0 1.6-1.6V3.6A1.6 1.6 0 0 0 20.4 2ZM8 18.7H5.3V9.4H8v9.3ZM6.7 8.3a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2ZM19 18.7h-2.7v-4.5c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4v4.6h-2.7V9.4h2.6v1.3h.1a2.9 2.9 0 0 1 2.6-1.4c2.7 0 3.3 1.8 3.3 4.2v5.2Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h2>Serviços</h2>
+          <ul>
+            <li><a href="index.html#servicos">Empresa no Paraguai</a></li>
+            <li><a href="index.html#servicos">Visto e Residência</a></li>
+            <li><a href="index.html#servicos">Holding e Offshore</a></li>
+            <li><a href="index.html#servicos">Planejamento Tributário</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="ojeda.html">Quem Somos</a></li>
+            <li><a href="index.html#diferenciais">Diferenciais</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Moshe Internacionalização · Advocacia Ojeda · OAB/SP 357.192</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
+      });
+    }
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('is-scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+</body>
+</html>
