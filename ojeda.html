@@ -178,6 +178,20 @@
       letter-spacing: -.03em;
     }
     .cta-section p { margin: 0 0 36px; color: var(--slate-600); font-size: 1.05rem; }
+  
+    /* Bio full-width */
+    .bio-text--full { max-width: 820px; margin-bottom: 52px; }
+    .bio-text--full h2 { margin: 0 0 6px; color: var(--ink-950); font-family: Montserrat,sans-serif; font-size: clamp(1.8rem,3vw,2.5rem); line-height: 1.1; letter-spacing: -.03em; }
+    .bio-text--full .oab { display: inline-block; margin-bottom: 24px; }
+    .bio-text--full p { margin: 0 0 18px; color: var(--slate-600); font-size: 1.06rem; line-height: 1.82; }
+    .bio-highlights--below { background: var(--surface); border-radius: var(--radius-md); padding: 36px 40px; box-shadow: var(--shadow-sm); }
+    .bio-highlights--below h3 { margin: 0 0 28px; color: var(--ink-950); font-family: Montserrat,sans-serif; font-size: 1.15rem; letter-spacing: -.02em; }
+    .highlight-list--horiz { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 20px; list-style: none; margin: 0; padding: 0; }
+    .highlight-list--horiz li { display: flex; gap: 14px; align-items: flex-start; }
+    .bio-social-links { margin-top: 28px !important; display: flex; flex-wrap: wrap; gap: 10px 6px; align-items: center; font-size: .93rem; }
+    .bio-social-links a { color: var(--gold-600); font-weight: 600; }
+    .bio-social-links a:hover { text-decoration: underline; }
+    .bio-social-links .sep { color: var(--slate-400); }
   </style>
 </head>
 <body>
@@ -241,62 +255,32 @@
 
     <section class="bio-section">
       <div class="container">
-        <div class="bio-inner">
-          <div class="bio-text">
-            <h2>Felipe Cavalhero Ojeda</h2>
-            <span class="oab">OAB/SP 357.192</span>
-            <p>Advogado, empresário, autor e criador de conteúdo, com atuação voltada à intersecção entre <strong>Direito, Bitcoin, planejamento patrimonial, internacionalização e soberania individual</strong>.</p>
-            <p>Graduado em Direito pela <strong>Universidade São Judas Tadeu</strong>, é pós-graduado em <strong>Direito Internacional, Direito Empresarial, Direito Tributário e Direito Constitucional</strong>. Desde 2018, preside a <strong>Comissão de Criptomoedas da OAB de São Caetano do Sul</strong>, consolidando uma trajetória que une formação jurídica, tecnologia, liberdade econômica e ativos digitais.</p>
-            <p>Com mais de uma década de experiência em <strong>Direito Tributário e Societário</strong>, desenvolveu sólida expertise no corredor <strong>Brasil–Paraguai</strong>, uma das fronteiras mais estratégicas da América do Sul para planejamento patrimonial, estruturação empresarial e internacionalização. À frente da <strong>MOSHE Internacional</strong>, da qual é sócio e CEO, acompanha pessoalmente clientes desde o diagnóstico inicial até a conclusão dos processos, com foco em segurança jurídica, transparência, eficiência e estratégia de longo prazo.</p>
-            <p>É também uma das principais referências brasileiras na intersecção entre <strong>Bitcoin, autocustódia, liberdade financeira e soberania internacional</strong>. Entusiasta do Bitcoin e do libertarianismo, dedica parte relevante de sua atuação à educação sobre proteção patrimonial, descentralização e redução da dependência de intermediários financeiros e institucionais.</p>
-            <p>Ojeda é proprietário dos canais <a href="https://www.youtube.com/@BitcoineLiberdade" target="_blank" rel="noopener" style="color:var(--gold-600);font-weight:700">Bitcoin e Liberdade</a> e <a href="https://www.youtube.com/@LiberdadeParaguai" target="_blank" rel="noopener" style="color:var(--gold-600);font-weight:700">Liberdade Paraguai</a>, coautor do livro <em>Bitcoin para Todos</em> e palestrante em eventos como <strong>Satsconf, BitSampa, Blockchain Conference, Anarcópolis</strong> e <strong>Missão Bitcoin</strong>.</p>
-            <p>Além da advocacia e da atividade empresarial, atua como divulgador das ideias de <strong>liberdade econômica, soberania individual e internacionalização</strong>, produzindo conteúdo para milhares de pessoas sobre Bitcoin, autocustódia, planejamento patrimonial e estratégias de liberdade.</p>
-            <p class="bio-social-links">
-              <a href="https://www.youtube.com/@BitcoineLiberdade" target="_blank" rel="noopener">YouTube: <strong>@BitcoineLiberdade</strong></a> &nbsp;·&nbsp;
-              <a href="https://www.youtube.com/@LiberdadeParaguai" target="_blank" rel="noopener">YouTube: <strong>@LiberdadeParaguai</strong></a> &nbsp;·&nbsp;
-              <a href="https://twitter.com/ojedabtc" target="_blank" rel="noopener">X/Twitter: <strong>@ojedabtc</strong></a>
-            </p>
-          </div>
-          <div class="bio-highlights">
-            <h3>Áreas de atuação</h3>
-            <ul class="highlight-list">
-              <li>
-                <div class="icon">🏢</div>
-                <div class="text">
-                  <strong>Abertura de empresa no Paraguai</strong>
-                  <span>SA, SRL e sucursais — registro, FEPYME, conta bancária e CÉDULA</span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">🗺️</div>
-                <div class="text">
-                  <strong>Visto e residência permanente</strong>
-                  <span>Regularização migratória completa para você e sua família</span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">🏦</div>
-                <div class="text">
-                  <strong>Holding e offshore</strong>
-                  <span>Estruturação de grupos empresariais para proteção e eficiência fiscal</span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">📊</div>
-                <div class="text">
-                  <strong>Planejamento tributário</strong>
-                  <span>Redução legal da carga fiscal no Brasil e no Paraguai</span>
-                </div>
-              </li>
-              <li>
-                <div class="icon">💼</div>
-                <div class="text">
-                  <strong>Direito empresarial</strong>
-                  <span>Contratos, M&amp;A, proteção de ativos e sucessão empresarial</span>
-                </div>
-              </li>
-            </ul>
-          </div>
+        <div class="bio-text bio-text--full">
+          <h2>Felipe Cavalhero Ojeda</h2>
+          <span class="oab">OAB/SP 357.192</span>
+          <p>Advogado, empresário, autor e criador de conteúdo, com atuação voltada à intersecção entre <strong>Direito, Bitcoin, planejamento patrimonial, internacionalização e soberania individual</strong>.</p>
+          <p>Graduado em Direito pela <strong>Universidade São Judas Tadeu</strong>, é pós-graduado em <strong>Direito Internacional, Direito Empresarial, Direito Tributário e Direito Constitucional</strong>. Desde 2018, preside a <strong>Comissão de Criptomoedas da OAB de São Caetano do Sul</strong>, consolidando uma trajetória que une formação jurídica, tecnologia, liberdade econômica e ativos digitais.</p>
+          <p>Com mais de uma década de experiência em <strong>Direito Tributário e Societário</strong>, desenvolveu sólida expertise no corredor <strong>Brasil–Paraguai</strong>, uma das fronteiras mais estratégicas da América do Sul para planejamento patrimonial, estruturação empresarial e internacionalização. À frente da <strong>MOSHE Internacional</strong>, da qual é sócio e CEO, acompanha pessoalmente clientes desde o diagnóstico inicial até a conclusão dos processos, com foco em segurança jurídica, transparência, eficiência e estratégia de longo prazo.</p>
+          <p>É também uma das principais referências brasileiras na intersecção entre <strong>Bitcoin, autocustódia, liberdade financeira e soberania internacional</strong>. Entusiasta do Bitcoin e do libertarianismo, dedica parte relevante de sua atuação à educação sobre proteção patrimonial, descentralização e redução da dependência de intermediários financeiros e institucionais.</p>
+          <p>Ojeda é proprietário dos canais <a href="https://www.youtube.com/@BitcoineLiberdade" target="_blank" rel="noopener" style="color:#d4af37;font-weight:700">Bitcoin e Liberdade</a> e <a href="https://www.youtube.com/@LiberdadeParaguai" target="_blank" rel="noopener" style="color:#d4af37;font-weight:700">Liberdade Paraguai</a>, coautor do livro <em>Bitcoin para Todos</em> e palestrante em eventos como <strong>Satsconf, BitSampa, Blockchain Conference, Anarcópolis</strong> e <strong>Missão Bitcoin</strong>.</p>
+          <p>Além da advocacia e da atividade empresarial, atua como divulgador das ideias de <strong>liberdade econômica, soberania individual e internacionalização</strong>, produzindo conteúdo para milhares de pessoas sobre Bitcoin, autocustódia, planejamento patrimonial e estratégias de liberdade.</p>
+          <p class="bio-social-links">
+            <a href="https://www.youtube.com/@BitcoineLiberdade" target="_blank" rel="noopener">YouTube: <strong>@BitcoineLiberdade</strong></a>
+            <span class="sep">&middot;</span>
+            <a href="https://www.youtube.com/@LiberdadeParaguai" target="_blank" rel="noopener">YouTube: <strong>@LiberdadeParaguai</strong></a>
+            <span class="sep">&middot;</span>
+            <a href="https://twitter.com/ojedabtc" target="_blank" rel="noopener">X/Twitter: <strong>@ojedabtc</strong></a>
+          </p>
+        </div>
+        <div class="bio-highlights bio-highlights--below">
+          <h3>Áreas de atuação</h3>
+          <ul class="highlight-list highlight-list--horiz">
+            <li><div class="icon">&#127970;</div><div class="text"><strong>Abertura de empresa no Paraguai</strong><span>SA, SRL e sucursais — registro, FEPYME, conta bancária e CÉDULA</span></div></li>
+            <li><div class="icon">&#128506;</div><div class="text"><strong>Visto e residência permanente</strong><span>Regularização migratória completa para você e sua família</span></div></li>
+            <li><div class="icon">&#127970;</div><div class="text"><strong>Holding e offshore</strong><span>Estruturação de grupos empresariais para proteção e eficiência fiscal</span></div></li>
+            <li><div class="icon">&#128202;</div><div class="text"><strong>Planejamento tributário</strong><span>Redução legal da carga fiscal no Brasil e no Paraguai</span></div></li>
+            <li><div class="icon">&#8383;</div><div class="text"><strong>Bitcoin e ativos digitais</strong><span>Assessoria jurídica em criptoativos, autocustódia e compliance</span></div></li>
+          </ul>
         </div>
       </div>
     </section>
