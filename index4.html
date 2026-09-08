@@ -106,6 +106,16 @@ footer.site{padding:60px 0 40px;font-size:.86rem;color:var(--muted);border-top:1
   .navlinks{display:none}
 }
 @media(max-width:600px){.cards-4,.process{grid-template-columns:1fr}}
+
+/* ebook-band */
+.ebook-band{background:var(--ink);color:#faf7f0;padding:64px 0}
+.ebook-band .wrap{display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+.ebook-band-copy{flex:1;min-width:220px}
+.ebook-band-copy small{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#c9a84c;font-weight:700}
+.ebook-band-copy h2{margin:10px 0 10px;font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,1.9rem)}
+.ebook-band-copy p{margin:0;opacity:.75;max-width:480px;font-size:.95rem}
+.ebook-band .btn-fill{background:#c9a84c;border-color:#c9a84c;color:#181611;white-space:nowrap}
+@media(max-width:600px){.ebook-band .wrap{flex-direction:column;text-align:center}.ebook-band .btn-fill{width:100%}}
 </style>
 </head>
 <body>
@@ -129,7 +139,7 @@ footer.site{padding:60px 0 40px;font-size:.86rem;color:var(--muted);border-top:1
     <h1>Liberdade financeira <span>sem fronteiras.</span></h1>
     <p>Planejamento tributário, holding, offshore e visto para o Paraguai, com acompanhamento completo do início ao fim do processo.</p>
     <div class="hero-actions">
-      <a class="btn btn-fill" href="https://moshe-internacional.rds.land/ebook-gratis" target="_blank" rel="noopener">Quero que a Moshe entre em contato comigo</a>
+      <a class="btn btn-fill" href="#contato">Quero que a Moshe entre em contato comigo</a>
       <a class="btn btn-line" href="https://wa.link/moshe" target="_blank" rel="noopener">Falar no WhatsApp</a>
     </div>
     <div class="globe-wrap">
@@ -218,6 +228,17 @@ footer.site{padding:60px 0 40px;font-size:.86rem;color:var(--muted);border-top:1
   </div>
 </section>
 
+
+<section class="ebook-band">
+  <div class="wrap">
+    <div class="ebook-band-copy">
+      <small>Grátis</small>
+      <h2>Quer entender antes de decidir?</h2>
+      <p>Baixe nosso eBook gratuito e descubra como funciona o planejamento tributário e patrimonial internacional.</p>
+    </div>
+    <a class="btn btn-fill" href="https://moshe-internacional.rds.land/ebook-gratis" target="_blank" rel="noopener">Quero meu eBook gratuito</a>
+  </div>
+</section>
 <section class="cta" id="contato">
   <div class="wrap">
     <h2>Quer que nossa equipe entre em contato?</h2>
