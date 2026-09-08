@@ -533,3 +533,13 @@ button { cursor: pointer; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ── eBook band ─────────────────────────────────────────────────── */
+.ebook-band { background: linear-gradient(125deg, var(--ink-950), #1d1b0b 55%, var(--ink-900)); padding: 72px 0; color: #fff; }
+.ebook-band-inner { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.ebook-band-icon { color: var(--gold-400); flex-shrink: 0; }
+.ebook-band-copy { flex: 1; min-width: 240px; }
+.ebook-band-copy .eyebrow { color: var(--gold-400); }
+.ebook-band-copy h2 { margin: 10px 0 12px; font-size: clamp(1.4rem, 2.8vw, 2rem); letter-spacing: -.025em; color: #fff; line-height: 1.25; }
+.ebook-band-copy p { margin: 0; color: #c8c7be; max-width: 520px; }
+@media (max-width: 640px) { .ebook-band-inner { flex-direction: column; text-align: center; } .ebook-band-icon { display: none; } .ebook-band-inner .btn { width: 100%; } }
